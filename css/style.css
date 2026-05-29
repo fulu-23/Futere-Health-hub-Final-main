@@ -1,0 +1,654 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #27ae60;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 15px 0;
+}
+
+ul li {
+    margin: 8px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li::before {
+    content: "✓";
+    color: #27ae60;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* HEADER & NAVIGATION - BLACK */
+header {
+    background: #000000;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    flex-wrap: wrap;
+}
+
+.logo-wrap img {
+    height: 70px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #ffffff;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+nav a:hover,
+nav a.active {
+    background: #27ae60;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(39, 174, 96, 0.4);
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main section {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.cta-button {
+    display: inline-block;
+    background: #27ae60;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #219150;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(39, 174, 96, 0.3);
+}
+
+/* HOME PAGE HERO */
+.hero {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+}
+
+.hero-img img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* HIGHLIGHTS SECTION */
+.highlights h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.highlight-card {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+}
+
+.highlight-card h3 {
+    color: #27ae60;
+}
+
+/* SERVICES PAGE - NEAT CARDS */
+.services-intro {
+    text-align: center;
+}
+
+.services-intro h1 {
+    margin-bottom: 20px;
+}
+
+.career-card {
+    background: #fff;
+    margin-bottom: 40px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.career-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+.career-card h2 {
+    color: #27ae60;
+    border-bottom: 2px solid #27ae60;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.career-card h3 {
+    margin-top: 20px;
+    color: #2c3e50;
+}
+
+.career-card img {
+    margin-top: 25px;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* ABOUT PAGE - PICTURE CARDS */
+.about-hero {
+    text-align: center;
+}
+
+.mission-vision {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.mission,
+.vision {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.value-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-card h3 {
+    color: #27ae60;
+}
+
+.about-image-card {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.about-image-card img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin: 0 auto;
+}
+
+.image-caption {
+    margin-top: 15px;
+    font-style: italic;
+    color: #777;
+}
+
+/* TEAM SECTION */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.team-card {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    border: 3px solid #27ae60;
+}
+
+.team-card h3 {
+    color: #27ae60;
+    margin-bottom: 5px;
+}
+
+.team-card p {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* CONTACT PAGE */
+.contact-intro {
+    text-align: center;
+}
+
+.contact-info-section {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+}
+
+.contact-details {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact-method {
+    margin-bottom: 25px;
+}
+
+.contact-method h3 {
+    color: #27ae60;
+    margin-bottom: 10px;
+}
+
+.contact-form-container {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* FORMS */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #444;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #27ae60;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #219150;
+}
+
+/* ENQUIRIES PAGE */
+.enquiries-intro {
+    text-align: center;
+}
+
+.enquiries-form-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* FOOTER - BLACK */
+footer {
+    background: #000000;
+    color: #ffffff;
+    padding: 40px 20px 20px;
+    margin-top: 30px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.footer-section h3 {
+    color: #27ae60;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    color: #cccccc;
+    margin: 8px 0;
+}
+
+.footer-bottom {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #333333;
+}
+
+.footer-bottom p {
+    color: #888888;
+}
+
+/* ============================================ */
+/* RESPONSIVE DESIGN - TABLET BREAKPOINT (768px) */
+/* ============================================ */
+
+@media (max-width: 768px) {
+
+    /* Typography adjustments for tablet */
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Header adjustments */
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-wrap img {
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+
+    /* Main content */
+    main {
+        padding: 20px 15px;
+    }
+
+    main section {
+        padding: 25px;
+    }
+
+    /* Hero section */
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Mission Vision */
+    .mission-vision {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact section */
+    .contact-info-section {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    /* Highlights grid */
+    .highlights-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Values grid */
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Team grid */
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+    }
+
+    .team-card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Career cards */
+    .career-card {
+        padding: 20px;
+    }
+
+    .career-card h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Forms */
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 30px 15px 15px;
+    }
+
+    .footer-content {
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+/* ============================================ */
+/* MOBILE BREAKPOINT (480px) */
+/* ============================================ */
+
+@media (max-width: 480px) {
+
+    /* Further typography adjustments */
+    body {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    main section {
+        padding: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .career-card {
+        padding: 15px;
+    }
+
+    .contact-details,
+    .contact-form-container {
+        padding: 20px;
+    }
+
+    .team-card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    nav a {
+        padding: 5px 12px;
+        font-size: 11px;
+    }
+}
