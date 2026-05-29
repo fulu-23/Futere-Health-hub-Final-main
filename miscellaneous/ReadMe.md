@@ -44,30 +44,30 @@ Enquiries
 2. Open `index.html` in any modern web browser (Chrome, Firefox, Edge, Safari).
 
 #Changelog
-13/04/26
-main content edited in home page
-added navigation on all pages
-image added in images file
-log added in all pages
+-13/04/26
+-main content edited in home page
+-added navigation on all pages
+-image added in images file
+-log added in all pages
  16/04/26
-Added content to the About page
-uploaded picture to the About page
-updated the footer
-main content edited in contact
-edited footer
-Improves content on contact and enquiries pages
-Update the service page
-Added more image
+-Added content to the About page
+-uploaded picture to the About page
+-updated the footer
+-main content edited in contact
+-edited footer
+-Improves content on contact and enquiries pages
+-Update the service page
+-Added more image
 24/05/26-29/05/26
-signifincantly improved visual design and styling
-add css external file
-made the website fully responsive
-expand content service and improve footer
-better layout and user interface improvement
-general code cleanup and optimization
-enhanced footer design and consistency
-improve typography,colours and overall visual hierachy
-update my ReadMe.md
+-signifincantly improved visual design and styling
+-add css external file
+-made the website fully responsive
+-expand content service and improve footer
+-better layout and user interface improvement
+-general code cleanup and optimization
+-enhanced footer design and consistency
+-improve typography,colours and overall visual hierachy
+-update my ReadMe.md
 
 ## Reference
 W3Schools.(n.d)*HTML Tutorial*.W3Schools.Retrieved April 10,2026, from <https://www.w3schools.com/html/default.asp.
