@@ -30,7 +30,7 @@ improve styling and user experiences
 ## Code Comments
 All HTML and CSS files include descriptive inline comments explaining key sections (e.g., navigation, hero section, footer, form styling).
 
-#Structure
+##Structure
 This website include the following pages
 
 Home
@@ -43,7 +43,7 @@ Enquiries
 1. Clone the repository: `git clone https://github.com/fulu-23/Futere-Health-hub-Final-main.git`
 2. Open `index.html` in any modern web browser (Chrome, Firefox, Edge, Safari).
 
-#Changelog
+##Changelog
 -13/04/26
 -main content edited in home page
 -added navigation on all pages
