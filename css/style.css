@@ -40,9 +40,10 @@ p {
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 14px;
     display: block;
 }
+
 
 a {
     text-decoration: none;
@@ -403,7 +404,19 @@ main section {
     resize: vertical;
 }
 
+/* Professional inline form messages */
+.form-message {
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    display: none;
+    font-weight: 600;
+    background: #e8f5e9;
+    color: #1f4d1f;
+}
+
 .submit-btn {
+
     display: block;
     width: 100%;
     padding: 14px;
@@ -414,12 +427,19 @@ main section {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .submit-btn:hover {
     background: #219150;
 }
+
+/* Ensure gradient override from the polish section wins cleanly */
+.submit-btn {
+    background: linear-gradient(135deg, #1f9d55 0%, #27ae60 55%, #18a058 100%);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
 
 /* ENQUIRIES PAGE */
 .enquiries-intro {
@@ -467,6 +487,122 @@ footer {
 
 .footer-bottom p {
     color: #888888;
+}
+
+/* ============================================ */
+/* ============================================ */
+/* Visual polish additions (glass + motion) */
+/* ============================================ */
+
+/* Modern background */
+body {
+    background:
+        radial-gradient(1200px 500px at 10% 0%, rgba(39, 174, 96, 0.18), transparent 55%),
+        radial-gradient(800px 400px at 90% 10%, rgba(39, 174, 96, 0.10), transparent 60%),
+        linear-gradient(180deg, #f8f9fa 0%, #f3f7f5 100%);
+}
+
+/* Smooth page feel */
+* {
+    scroll-behavior: smooth;
+}
+
+/* Section reveal hooks used by existing JS */
+.hidden-section {
+    opacity: 0;
+    transform: translateY(18px);
+    filter: blur(2px);
+    transition: opacity 0.6s ease, transform 0.6s ease, filter 0.6s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+/* Upgrade panel/cards */
+main section {
+    background: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(39, 174, 96, 0.12);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.06);
+}
+
+header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Buttons */
+.cta-button,
+.submit-btn,
+.toggle-summary-btn {
+    background: linear-gradient(135deg, #1f9d55 0%, #27ae60 55%, #18a058 100%);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.cta-button:hover,
+.submit-btn:hover,
+.toggle-summary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(39, 174, 96, 0.28);
+}
+
+.cta-button:focus-visible,
+.submit-btn:focus-visible,
+nav a:focus-visible {
+    outline: 3px solid rgba(39, 174, 96, 0.35);
+    outline-offset: 2px;
+}
+
+/* Navbar: stronger hover */
+nav a {
+    letter-spacing: 0.4px;
+}
+
+/* Hero image: subtle lift */
+.hero-img img {
+    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.12);
+}
+
+.hero {
+    position: relative;
+}
+
+/* Cards & list items */
+.highlight-card,
+.career-card,
+.value-card,
+.mission,
+.vision,
+.contact-details,
+.contact-form-container,
+.team-card {
+    will-change: transform;
+}
+
+.highlight-card {
+    background: rgba(248, 249, 250, 0.75);
+    border: 1px solid rgba(39, 174, 96, 0.10);
+}
+
+.career-card {
+    background: rgba(255, 255, 255, 0.88);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+/* Improve image corners across the site */
+img {
+    border-radius: 14px;
+}
+
+/* Slight motion for hover */
+.highlight-card:hover,
+.career-card:hover,
+.value-card:hover,
+.team-card:hover {
+    transform: translateY(-6px);
 }
 
 /* ============================================ */
