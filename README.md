@@ -49,6 +49,14 @@
 - **JavaScript** — interactive enhancements (where applicable)
 - **GitHub Pages** — hosting/deployment
 
+- ## JavaScript (Client-Side Functionality)
+The project uses a single client-side script file:
+- `js/script.js`
+
+JavaScript is used to enhance the website experience through actions such as:
+- Handling any interactive UI behaviours implemented across pages (e.g., toggling/revealing sections if present).
+- Enhancing user interaction for improved usability.
+- Supporting form-related behaviours where implemented in the script (e.g., basic client-side handling).
 ---
 
 ## Timeline and Milestones
@@ -76,6 +84,13 @@
 - Improved typography, colours, and visual hierarchy.
 - General code cleanup and optimisation.
 - Updated this README with project details.
+
+- ## Milestone 4 — JavaScript Enhancements & Interactivity (Post UI Improvements)  (09/06/26-19/06/26)
+- Added/connected interactivity using `js/script.js` to improve the overall user experience.
+- Ensured JavaScript behaviours match the HTML structure (classes/IDs used in the pages).
+- Verified interactive elements (such as any show/hide/toggle or form-related behaviours) work properly across devices.
+
+---
 
 ---
 
