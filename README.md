@@ -92,4 +92,29 @@
 - W3Schools. (n.d). *HTML Tutorial*. Retrieved April 10, 2026, from https://www.w3schools.com/html/default.asp
 - W3Schools. (n.d). *CSS Tutorial*. Retrieved May 2026, from https://www.w3schools.com/css
 - OpenAI. (2025). *ChatGPT* (Version GPT-5) [Large language model]. Retrieved April 10, 2026, from https://chatgpt.com
+- w3Schools. (n.d). *java script*. Retrived june 17, 2026,from https://www.w3schools.com/html/default.asp
+<img width="1912" height="948" alt="image" src="https://github.com/user-attachments/assets/f5f1dafa-b51d-493c-9677-b505fbbc144d" />
+<img width="1912" height="948" alt="image" src="https://github.com/user-attachments/assets/7e863df6-e1cd-498d-a0bf-99d34dbe928e" />
+<img width="1912" height="948" alt="image" src="https://github.com/user-attachments/assets/dfc53693-9e10-4f8f-8061-9ce5165fc7c7" />
+<img width="1912" height="948" alt="image" src="https://github.com/user-attachments/assets/d6853834-2e43-4c87-9525-fb61d9101c16" />
+<img width="1912" height="948" alt="image" src="https://github.com/user-attachments/assets/b7a7c680-e82a-49cc-8ff3-da4468d026f9" />
+<img width="1912" height="948" alt="image" src="https://github.com/user-attachments/assets/70e81bd5-050a-41c4-8694-a75f4d628e47" />
+<img width="1912" height="948" alt="image" src="https://github.com/user-attachments/assets/d379f726-5008-40bf-9ba3-f277d70f1de8" />
+<img width="1912" height="948" alt="image" src="https://github.com/user-attachments/assets/2d01751b-2c5a-4521-8698-321ba64d02fb" />
+<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/30e13d7f-bcf1-4217-9e63-39eebe8a14be" />
+<img width="1912" height="948" alt="image" src="https://github.com/user-attachments/assets/90f2aee3-1c53-4504-9c2f-4e94d0e0a6f4" />
+<img width="1912" height="948" alt="image" src="https://github.com/user-attachments/assets/b7b8eef1-2807-486b-96a6-0d148aa7c31d" />
+<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/bb6fefde-8bcc-4690-bd68-852538715d25" />
+
+
+
+
+
+
+
+
+
+
+
+
 
